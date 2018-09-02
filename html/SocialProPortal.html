@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="socialProPortalApp">
+<head>
+    <meta charset="UTF-8">
+    <title>SocialProPortal</title>
+    <script src="../vendor/js/angular-1.6.9.js"></script>
+    <link rel="stylesheet" href="../vendor/css/socialProPortal.css">
+    <script src="../vendor/js/jquery-1.9.1.js" type="text/javascript" ></script>
+    <script src="../js/socialProPortal.js" type="text/javascript" ></script>
+</head>
+<body>
+    <div class="main_social_pro_portal" ng-controller="socialProPortalController as socialProPortal">
+        <div class="title_social_pro">
+            <h2>Social产品入口</h2>
+            <a href="../file/social平台用户手册0711.docx" download="">使用手册</a>
+        </div>
+
+        <div class="product_list">
+            <div class="product" ng-repeat="product in socialProPortal.productLists" ng-click="seleProduct(product)">
+                {{product.name}}
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

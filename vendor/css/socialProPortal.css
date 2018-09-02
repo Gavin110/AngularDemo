@@ -1,0 +1,56 @@
+body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+body a {
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+.main_social_pro_portal {
+    width: 900px;
+    margin: 30px auto;
+    height: 600px;
+}
+.title_social_pro {
+    height: 50px;padding: 0 20px;
+}
+.title_social_pro h2 {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+.title_social_pro a {
+    float: right;
+    margin-top: 25px;
+    color: #28A4DA;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.title_social_pro a:hover {
+    color: #f25959;
+}
+.product_list .product {
+    display: inline-block;
+    width: 22%;
+    text-align: center;
+    height: 120px;
+    line-height: 120px;
+    margin-top: 20px;
+    background-color: #CBE9FB;
+    margin-left: 20px;
+    color: grey;
+    border-radius: 5px;
+    box-shadow:0px 0px 5px 2px #C8C8C8;
+    cursor: pointer;
+}
+.product_list .product:hover {
+    color: #fff;
+    background-color: #f25959;
+    -webkit-box-shadow:0 0 20px rgba(242,89,89, .5);
+    -moz-box-shadow:0 0 20px rgba(242,89,89, .5);
+    box-shadow:0 0 20px rgba(242,89,89, .5);
+}
+.product_list .product {
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
