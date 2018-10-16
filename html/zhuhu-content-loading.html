@@ -11,15 +11,19 @@
             border-radius: 3px;
             padding: 12px;
             margin: 0 auto;
-            max-width: 472px;
+            box-sizing: border-box;
+            /*max-width: 472px;*/
+            width: 100%;
             min-height: 200px;
         }
         @keyframes placeHolderShimmer{
+            /*动画开始时间*/
             0%{
-                background-position: -468px 0
+                background-position: -500px 0
             }
+            /*动画结束时间*/
             100%{
-                background-position: 468px 0
+                background-position: 500px 0
             }
         }
         .animated-background {
@@ -33,6 +37,7 @@
             background-size: 800px 104px;
             height: 96px;
             position: relative;
+            border: 1px solid red;
         }
         .background-masker {
             background: #fff;
@@ -46,7 +51,6 @@
             left: 40px;
             right: 0;
             height: 10px;
-            border: 1px solid green;
             box-sizing: border-box;
         }
         .background-masker.header-left,
@@ -58,7 +62,6 @@
             height: 8px;
             width: 10px;
             box-sizing: border-box;
-            border: 1px solid red;
         }
         .background-masker.header-bottom {
             top: 18px;
@@ -75,7 +78,6 @@
             left: 300px;
             right: 0;
             box-sizing: border-box;
-            border: 1px solid yellow;
         }
         .background-masker.subheader-right {
             left: 230px;
@@ -124,8 +126,7 @@
     </style>
 </head>
 <body>
-<div class="timeline-wrapper">
-    <div class="timeline-item">
+    <!--<div class="timeline-item">-->
         <div class="animated-background">
             <div class="background-masker header-top"></div>
             <div class="background-masker header-left"></div>
@@ -141,8 +142,7 @@
             <div class="background-masker content-third-line"></div>
             <div class="background-masker content-third-end"></div>
         </div>
-    </div>
-</div>
+    <!--</div>-->
 </body>
 <!-- <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script> -->
 </html>
