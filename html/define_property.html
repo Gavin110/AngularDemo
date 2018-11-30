@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>defineProperty</title>
+
+</head>
+<body>
+defineProperty
+<input type="text" id="inp"/>
+<div id="text">我是测试数据的</div>
+</body>
+</html>
+
+<script type="text/javascript">
+  // let data ={} ;
+  //let index = 1;
+  // Object.defineProperty(data,"age",{ //不明白参数什么含义的请往上看咯
+  //     get:function(){
+  //         return index;//获取到了定义的index变量
+  //     }
+  // })
+  // console.log("对象object:::::",data); // {age:1}
+
+  var data = {}
+  var index = 1
+  Object.defineProperty(data, 'age', {
+    get: function () {
+      return index
+    },
+    set: function (xinZhi) {
+      index = xinZhi + 10
+    }
+  })
+  data.age = 2
+  console.log(data) // {age:11}
+
+  // const inp = document.getElementById("inp"),tex=document.getElementById("text"), data = {};//获取两个元素
+  // Object.defineProperty(data,"name",{
+  //     get:function(){
+  //         return inp.value;//获取到文本框value输入的值
+  //     },
+  //     set:function(newdata){//接收到文本框value的值
+  //         tex.innerHTML = newdata;//div的值等于文本框的值
+  //     }
+  // })
+  // inp.addEventListener("keyup",function(e){//键盘按下的时候来实时同步
+  //     data.name = this.value;
+  // })
+
+</script>
