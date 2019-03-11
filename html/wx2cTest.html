@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+
+      function haha(a) {
+        // var a={length:2,0:'first',1:'second'};
+        console.log('aaaa:::', Array.prototype.slice.call(a));
+        return false, '123';
+      }
+
+      function getElements () {
+        var x = document.getElementsByTagName('input')
+        var b = /bdsdsd/i;
+        // console.log('test正则：：：', b.test(document.getElementsByTagName("a")[0].getAttribute("onclick")));
+        // console.log('onclick:::', document.getElementsByTagName("a")[0].getAttribute("onclick"));
+        // console.log('returnHaha::::', haha(['one','two','three']));
+        console.log('return haha::::', haha('n', 'm', 'd'));
+      }
+    </script>
+</head>
+<body>
+<a href="javascript:void(0)" onclick="console.log('onclick trigger')">hah</a>
+<input name="myInput" type="text" size="20"/><br/>
+<input name="myInput" type="text" size="20"/><br/>
+<input name="myInput" type="text" size="20"/><br/>
+<br/>
+<input type="button" onclick="getElements()" value="How many input elements?"/>
+
+</body>
+</html>
